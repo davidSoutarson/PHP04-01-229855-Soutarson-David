@@ -53,6 +53,28 @@ body {
   background-color: rgb(204, 219, 221);
 }
 
+.contunuT {
+  display: block;
+  width: 100%;
+}
+
+.contenue-generer {
+  display: flex;
+}
+
+.bleux {
+  color: blue;
+}
+
+.afichage {
+  border: 2px solid rgb(76, 97, 165);
+  display: block;
+  background-color: rgb(146, 228, 166);
+  padding-left: 1em;
+  margin: 1em;
+  width: 33%;
+}
+
 footer {
   border: 2px solid rgb(76, 159, 165);
   display: block;
