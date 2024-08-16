@@ -9,17 +9,19 @@
             <a href="/PHP04-01-229855-Soutarson-David" class="iteme">RETOUR INDEX</a>
         </li>
         <li class="liste-iteme">
-            <a href="php/object-ecole.php" class="iteme">Page 1 object école </a>
+            <a href="vue/ecrire-en-bd.php" class="iteme"> ecrire-en-bd </a>
         </li>
         <li class="liste-iteme">
-            <a href="#" class="iteme">Page 2 </a>
+            <a href=/vue/afichageOrige.php class="iteme">afichageOrige </a>
+        </li>
+        <!-- 
+        <li class="liste-iteme">
+            <a href="#" class="iteme">???? </a>
         </li>
         <li class="liste-iteme">
-            <a href="#" class="iteme">Page 3 </a>
-        </li>
-        <li class="liste-iteme">
-            <a href="#" class="iteme">Page 4 </a>
-        </li>
+            <a href="#" class="iteme">???? </a>
+        </li> -->
+
     </ul>
 
 </nav>

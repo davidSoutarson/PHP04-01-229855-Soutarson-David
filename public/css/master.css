@@ -2,10 +2,11 @@ body {
   width: 100%;
   background-color: black;
   display: flex;
+  flex-direction: column;
 }
 
 .wraper {
-  width: 80%;
+  width: 90%;
   border: 2px solid rgb(76, 78, 165);
   display: block;
   background-color: rgb(209, 233, 231);
@@ -51,6 +52,7 @@ body {
   border: 2px solid rgb(76, 159, 165);
   display: block;
   background-color: rgb(204, 219, 221);
+  margin: 0 auto;
 }
 
 .contunuT {
@@ -60,6 +62,7 @@ body {
 
 .contenue-generer {
   display: flex;
+  width: 80%;
 }
 
 .bleux {

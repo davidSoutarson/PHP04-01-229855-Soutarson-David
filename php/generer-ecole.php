@@ -107,48 +107,63 @@ class Ecole
 
 
 
-    #F 1
+    #fontion case 1
     public $eleves_pratiquant_juste_1_sports;
     public function pratiquant_juste_1_sports()
     {
         $p_max = $this->nombre_sportifs;
         $this->eleves_pratiquant_juste_1_sports = $p_max;
+
+        echo $this->eleves_pratiquant_juste_1_sports . " : éleve pratiquan juste un sport ";
     }
 
-    #F 2
+
+    #fontion case 2 et case 3
     public $eleves_pratiquant_1_sports;
     public function pratiquant_1_sports()
     {
         $p_max = $this->nombre_sportifs;
         $this->eleves_pratiquant_1_sports = rand(0, $p_max);
+
+        echo $this->eleves_pratiquant_1_sports . " éleve pratiquan un sport, ";
     }
 
-    #F 3
-    public $eleves_pratiquant_2_sports;
-    public function pratiquant_2_sports()
-    {
-        $p2_max = $this->nombre_sportifs - $this->eleves_pratiquant_1_sports;
-        $this->eleves_pratiquant_2_sports = rand(0, $p2_max);
-    }
-
-    #F 4
+    #fontion case 2
     public $eleves_pratiquant_max2_sports;
     public function pratiquant_max2_sports()
     {
         $pm2_max = $this->nombre_sportifs - $this->eleves_pratiquant_1_sports;
         $this->eleves_pratiquant_max2_sports =  $pm2_max;
+
+        echo " " . $this->eleves_pratiquant_max2_sports . " et éleve pratiquan max deux sport ";
     }
 
-    #F 5
+
+    #fontion case 3
+    public $eleves_pratiquant_2_sports;
+    public function pratiquant_2_sports()
+    {
+        $p2_max = $this->nombre_sportifs - $this->eleves_pratiquant_1_sports;
+        $this->eleves_pratiquant_2_sports = rand(0, $p2_max);
+
+        echo $this->eleves_pratiquant_2_sports . " éleve pratiquan deux sport et ";
+    }
+
+    #fontion case 3
     public $eleves_pratiquant_3_sports;
     public function pratiquant_3_sports()
     {
         $p3_max = $this->nombre_sportifs - ($this->eleves_pratiquant_2_sports + $this->eleves_pratiquant_1_sports);
         $this->eleves_pratiquant_3_sports = $p3_max;
+
+        echo $this->eleves_pratiquant_3_sports . " éleve pratiquan trois sport ";
     }
 
 
-    public function atibu_n_s()
+    //-------------------------------------------------
+    //nonbre de pratiquan par sport
+    // utilise :  $liste_sport_pratiquees[] , $nombre_sportifs , $nombre_sport_pratiques
+    public function nonbre_pratiquan_par_sport()
     {
         $liste_sport_pratiquees = $this->liste_sport_pratiquees;
         $nombre_sportifs = $this->nombre_sportifs;
@@ -160,7 +175,7 @@ class Ecole
             echo $liste_sport_pratiquees[0] . ":  : " . $nombre_sportifs;
         }
         if ($nombre_sport_pratiques == 2) {
-            $unPs = rand(0, $nombre_sportifs);
+            $unPs = rand(1, $nombre_sportifs);
             $deuxPs = $nombre_sportifs - $unPs;
 
             echo $liste_sport_pratiquees[0] . ":" . $unPs . "<br>" .
@@ -170,11 +185,11 @@ class Ecole
         if ($nombre_sport_pratiques == 3) {
 
             $un = $this->eleves_pratiquant_1_sports;
-            $part_un = rand(0, $un);
+            $part_un = rand(1, $un);
             $rest_un = $un - $part_un;
 
             $deux = $this->eleves_pratiquant_2_sports;
-            $part_deux = rand(0, $deux);
+            $part_deux = rand(1, $deux);
             $rest_deux = $deux - $part_deux;
 
             $trois = $this->eleves_pratiquant_3_sports;
@@ -188,15 +203,15 @@ class Ecole
         if ($nombre_sport_pratiques == 4) {
 
             $un = $this->eleves_pratiquant_1_sports;
-            $part_un = rand(0, $un);
+            $part_un = rand(1, $un);
             $rest_un = $un - $part_un;
 
             $deux = $this->eleves_pratiquant_2_sports;
-            $part_deux = rand(0, $deux);
+            $part_deux = rand(1, $deux);
             $rest_deux = $deux - $part_deux;
 
             $trois = $this->eleves_pratiquant_3_sports;
-            $part_trois = rand(0, $trois);
+            $part_trois = rand(1, $trois);
             $rest_trois = $trois - $part_trois;
 
             $part_quatre = $rest_un + $rest_deux + $rest_trois;
@@ -210,19 +225,19 @@ class Ecole
         if ($nombre_sport_pratiques == 5) {
 
             $un = $this->eleves_pratiquant_1_sports;
-            $part_un = rand(0, $un);
+            $part_un = rand(1, $un);
             $rest_un = $un - $part_un;
 
             $deux = $this->eleves_pratiquant_2_sports;
-            $part_deux = rand(0, $deux);
+            $part_deux = rand(1, $deux);
             $rest_deux = $deux - $part_deux;
 
             $trois = $this->eleves_pratiquant_3_sports;
-            $part_trois = rand(0, $trois);
+            $part_trois = rand(1, $trois);
             $rest_trois = $trois - $part_trois;
 
             $quatre = $rest_un + $rest_deux + $rest_trois;
-            $part_quatre = rand(0, $quatre);
+            $part_quatre = rand(1, $quatre);
             $rest_quatre = $quatre - $part_quatre;
 
             $part_cinq = $rest_quatre;

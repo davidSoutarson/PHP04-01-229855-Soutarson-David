@@ -1,9 +1,11 @@
 <?php
-require "vue/head.html";
+require "php/config.php";
 
-require "vue/menue.html";
+require "vue/head.php";
+
+require "vue/menue.php";
 
 require "vue/main-index.php";
 
 
-require "vue/foot.html";
+require "vue/foot.php";
